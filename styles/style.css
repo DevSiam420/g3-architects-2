@@ -33,11 +33,11 @@
 /* ========= color======== */
 /* dark02 */
 .text-gray {
-  color: 424242;
+  color: #424242;
 }
 /* dark-03 */
 .text-light-gray {
-  color: 727272;
+  color: #727272;
 }
 /* ===== header styles===== */
 
@@ -80,12 +80,111 @@
   width: 100%;
 }
 
+/* =========Main=========== */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* ===============section-style========= */
+
+.teams {
+  display: flex;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.our-features {
+  margin-left: 100px;
+  max-width: 537px;
+}
+.ferure-title {
+  font-size: 2.8rem;
+}
+#Quick-list {
+  font-weight: 500px;
+}
+.Quick-list-2 {
+  font-weight: 700;
+}
+.Quick-list-3 {
+  font-weight: 700;
+  color: rgba(255, 144, 14, 1);
+}
+.feture-description {
+  line-height: 24px;
+  letter-spacing: 0;
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+/* =================Section-2=========== */
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact{
+  border: 1px solid #e67e22;
+  margin: 30px 60px;
+  border-radius: 7px;
+  width: 200px;
+  height: auto;
+}
+.fact-details{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+
+}
+.fact-number{
+  font-size: 45px;
+}
+.fact-name{
+  font-size: 20px;
+  font-weight: 600;
+
+}
 /* =========Responsive-media-quary===========*/
 
 @media screen and (max-width: 576px) {
   .navber,
-  .nav-links {
+  .nav-links,
+  .teams {
     flex-direction: column;
-    
   }
+  .img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 20px;
+    text-align: left;
+  }
+  /* =Section-2  */
+
+  .fact-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
+/* =============Medium_devices-responsive============== */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin-left:-10em;
+  }
+  /* ===section-2=== */
+  .fact-container{
+    grid-template-columns: repeat(2, 1fr);
 }
