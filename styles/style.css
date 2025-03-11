@@ -120,35 +120,118 @@ main {
   letter-spacing: 0;
   margin-top: -24px;
   margin-bottom: 32px;
+  font-size: 1.2rem;
 }
 
 /* =================Section-2=========== */
-.fact-container{
+.ferure-title-2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #131313;
+  margin: auto 1rem;
+}
+.feture-description-2 {
+  margin: 1rem 20px 1rem;
+  font-size: 1.2rem;
+}
+.fact-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.fact{
+.fact {
   border: 1px solid #e67e22;
   margin: 30px 60px;
   border-radius: 7px;
   width: 200px;
   height: auto;
 }
-.fact-details{
+.fact-details {
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 40px;
-
 }
-.fact-number{
+.fact-number {
   font-size: 45px;
 }
-.fact-name{
+.fact-name {
   font-size: 20px;
   font-weight: 600;
-
 }
+
+.line{
+  width:  80%;
+  height: 4px;
+  border-radius: 2px;
+ background:  linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+ margin:0 auto;
+ margin-top: 70px;
+}
+/* ==========Section-3============ */
+
+.section-descriotion{
+  font-size: 1.0rem;
+  color: violet;
+}
+
+.Our-Sponspors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Sponspors-info {
+  max-width: 540px;
+  max-height: 130px;
+  text-align: center;
+  margin: 50px auto;
+}
+.section-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+/* ========img-secton====== */
+.img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  margin-bottom: 70px;
+}
+.sponcer-companies > img {
+  margin: auto 40px;
+  width: 5rem;
+  height: auto;
+  transition: background-color 0.3s ease;
+}
+
+/* =============footer-desing======== */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer-content {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100px;
+  width: 70%;
+  background-color: #fff4e7;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer-description {
+  font-size: 20px;
+  color: #424242;
+}
+
 /* =========Responsive-media-quary===========*/
 
 @media screen and (max-width: 576px) {
@@ -166,25 +249,100 @@ main {
   }
   /* =Section-2  */
 
-  .fact-container{
+  .fact-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .fact {
+    width: 90%;
+    height: 90%;
+    margin: auto auto;
+  }
+  .line{
+    width:  90%;
+    height: 5px;
+    border-radius: 2px;
+   background:  linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+   margin:0 auto;
+   margin-top: 20%;
+  
+  
+  }
+  /* =========Section-3====== */
+  /* ======img===section===== */
+  .section-descriotion{
+    font-size: 1.2rem;
+    color: #626567;
+  }
+  .sponcer-companies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #f4f6f6;
+    border-radius: 19px;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+  .sponcer-companies > img {
+    width: 60%;
+    margin: auto 25px 5px;
+  }
+  /* ========footer======= */
+
+  .footer-content {
+    width: 100%;
+    height: auto;
+    background-color: #34495e;
+  }
+  .footer-description {
+    color: #f4f6f6;
   }
 }
 
-
-
-
-
 /* =============Medium_devices-responsive============== */
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .teams {
     flex-direction: column;
   }
   .our-features {
-    margin-left:-10em;
+    margin-left: -10em;
   }
   /* ===section-2=== */
-  .fact-container{
+  .fact-container {
     grid-template-columns: repeat(2, 1fr);
+  
+  }
+
+  /* ========Section-3======= */
+  /* ======img-section===== */
+  .section-descriotion{
+    font-size: 1.4rem;
+    color: #e67e22;
+  }
+  .sponcer-companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 2em;
+  }
+  .Our-Sponspors{
+    margin: 0 auto;
+  }
+  .sponcer-companies > img {
+    width: 40%;
+  }
+
+  /* -=========footer========= */
+  .footer-content {
+    width: 100%;
+    height: auto;
+    background-color: #34495e;
+  }
+  .footer-description {
+    color: #f4f6f6;
+  }
 }
